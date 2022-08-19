@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Amiri-Regular ;
+    src: url(../fonts/Amiri/Amiri-Regular.ttf);
+}
+body{
+    background-color: rgb(0, 0, 0);
+    
+}
+.navbar_top {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Amiri-Regular;
+    opacity: .9;
+  }
+  
+  .navbar_top a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar_top a img{
+    width:20px;
+     height:20px;
+     padding-top: 0px;
+  }
+ 
+  
+  .navbar_top .dropdownn {
+    float: right;
+    overflow: hidden;
+    
+  }
+  
+  .dropdownn .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar_top a:hover, .dropdownn:hover .dropbtn {
+    background-color: rgb(145, 141, 142);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdownn:hover .dropdown-content {
+    display: block;
+  }
+  .cover{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cover img{
+    width: 100%;
+ 
+}
+.bags{
+   
+    background-color: white;
+    padding-top: 50px;
+    
+}
+.bags p{
+    font-size: 20px;
+    font-family:Amiri-Regular ;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.bags-items{
+  width: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding-right: 280px;
+  
+        
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+
+  .bags-items .card{
+      float: right;
+      width: 33.33%;
+      margin-left:20px ;
+      margin-right:20px ;
+      margin-bottom:30px ;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+      
+  }
+  .card-image {
+      position: relative;
+    }
+    
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding-top: 100px;
+        font-family: Amiri-Regular;
+      }
+    
+    .card:hover .image-overlay {
+        opacity: 1;
+      }
+  .footer {
+      background: #333;
+      padding: 5px 0;
+      opacity: .9;
+    }
+    .footer p{
+        font-size: 20px;
+        font-family: Amiri-Regular;
+        color: #70726F;
+    }
+
+    .footer a {
+      color: #70726F;
+      font-size: 20px;
+      padding: 10px;
+      
+      transition: all .5s ease;
+    }
+   
+    .footer a:hover {
+      color: white;
+    }

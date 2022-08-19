@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Amiri-Regular ;
+    src: url(../fonts/Amiri/Amiri-Regular.ttf);
+}
+@font-face {
+    font-family:Lobster-Regular ;
+    src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+
+body{
+    background-color:white ;
+    
+}
+
+.navbar{
+    margin: auto;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    direction: rtl;
+    background-color:rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.navbar a{
+    
+    color:  white;
+}
+.navbar .navbar-brand {
+    font-family: Lobster-Regular;
+    font-size: 20px;
+    font-weight: 300;
+}
+.navbar ul li a {
+ margin-left: 20px;
+ font-family: Amiri-Regular;
+ font-weight: 700;
+}
+.collapse {
+ 
+    direction: ltr;
+    margin-right: 810px;
+  }
+@media(max-width:575px){
+    .navbar{
+        padding-left: 30px;
+        padding-right: 30px;
+       
+    }
+
+}
+
+.carousel {
+width: 100%;
+margin: auto;
+background-color: #e7dde6;
+}
+.carousel-item img {
+    max-height: 95vh; 
+    object-fit: cover;
+    padding-bottom: 40px;
+    
+    
+    
+  }
+
+.Content{
+    background-color: #f8f9fa !important;
+    padding: 80px 0;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.Content h1,.offers h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: Amiri-Regular;
+    font-weight: 500;
+    color: rgb(49, 46, 49);
+}
+
+.Content-items{
+    width: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22%; 
+    padding-right: 12%;       
+}
+.Content-items .card,.offers-items .card{
+    float: left;
+    width: 33.33%;
+    margin-left:40px ;
+    margin-right:40px ;
+    margin-bottom:30px ;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  -webkit-box-shadow:  15px 15px 27px rgba(0,0,0,.2), -15px -15px 27px rgba(0,0,0,.2);
+  box-shadow:  15px 15px 27px rgba(0,0,0,.2), -15px -15px 27px rgba(0,0,0,.2);
+    
+}
+ .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding-top: 100px;
+        font-family: Amiri-Regular;
+        
+      }
+    
+    .card:hover .image-overlay {
+        opacity: 1;
+      }
+
+
+@media(max-width:575px){
+    .Content-items .card,.offers-items .card{
+        width: 100%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+
+}
+.ttapp{
+    width: 100%;
+}
+.ttapp img{
+    width: 100%;
+}
+
+
+.offers-items{
+    width: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px; 
+    padding-left: 10%;       
+}
+
+
+.offers h2{
+    margin-top: 50px;
+    
+}
+.rating  span:hover:before {
+    content: "\2605";
+    position: absolute;
+ }

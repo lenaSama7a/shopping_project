@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head >
+      <title>التفاصيل</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <link rel="stylesheet" href="css/detailsc1.css">
+      
+        <script src="js/jquery.js" ></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <link rel="icon" href="img/Flaming.jpg">
+    
+</head>
+<body>
+
+<div class="navbar_top">
+  <a href="index.html"><img src="img/Flaming.jpg"  alt="logo"></a>
+  <a href="index.html">الرئيسية</a>
+  <a href="care.html"><i class="far fa-heart"></i> رعاية شخصية</a>
+  <a href="bags.html"> <i class="fas fa-shopping-bag"></i> حقائب</a>
+  <a href="#"><i class="fas fa-gem"></i> اكسسوارات ومجوهرات</a>
+  <div class="dropdownn">
+    <button class="dropbtn ">ملابس
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="dresses.html">فساتين</a>
+      <a href="#">جينز</a>
+      <a href="#">شيرت</a>
+      <a href="#">تي شيرت</a>
+    </div>
+  </div> 
+  <a href="#"><i class="fas fa-home"></i> المنزل</a>
+  <a href="#"> <i class="fas fa-bolt"></i> منتجات الكترونية</a>
+  <a href="cart.html" class=" nav-link navbar-link-2 waves-effect  " style="margin-right: 330px;">
+    <span class="badge badge-pill badge-danger">4</span>
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+  
+</div>
+
+<div class="details">
+    <div class="containerd">
+        <div class="img"> 
+            
+            <img src="img/c1.webp" alt="dress1"></div>  
+      
+  <div class="text_details">
+      <h2>يغذي ويرمم غسول الصبار</h2>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <div class="discount"> <span class="dis">18.00 ₪</span> <span class="nodis">25.00 </span></div>
+      
+      <p>العدد:</p>
+      <div class="counter">
+       
+        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+        <input type="text" value="1">
+        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+      </div>
+      <script type="text/javascript">
+        function increaseCount(a, b) {
+          var input = b.previousElementSibling;
+          var value = parseInt(input.value, 10); 
+          value = isNaN(value)? 0 : value;
+          value ++;
+          input.value = value;
+        }
+        function decreaseCount(a, b) {
+          var input = b.nextElementSibling;
+          var value = parseInt(input.value, 10); 
+          if (value > 1) {
+            value = isNaN(value)? 0 : value;
+            value --;
+            input.value = value;
+          }
+        }
+      </script>
+      <button type="button" class="btn btn-dark">أضف الى العربة </button>
+      <span  class="fas fa-heart" ></span>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fas fa-plus"></i>
+                الوصف
+               </a> 
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">لون:	أبيض
+               <br> نوع:	مرطب وجة
+               <br>انواع الجلد:	عادي
+               <br>وظيفة:	مرطب, مغذي
+               <br>مكونات:	خالي من الكحول
+               <br>الحجم الصافي :	150 ml
+               <br> الطول :	4.7 cm
+               <br>  عرض :	4.7 cm
+               <br>    ارتفاع :	15 cm
+          </div>
+        </div>
+        
+      </div>
+      </div>
+</div>
+
+</body>
+</html>

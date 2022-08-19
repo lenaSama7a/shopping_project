@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Amiri-Regular ;
+    src: url(../fonts/Amiri/Amiri-Regular.ttf);
+}
+body{
+    background-color: rgb(243, 232, 243);
+    height: 1000px;
+    
+}
+.navbar_top {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Amiri-Regular;
+    opacity: .9;
+  }
+  
+  .navbar_top a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar_top a img{
+    width:20px;
+     height:20px;
+     padding-top: 0px;
+  }
+ 
+  
+  .navbar_top .dropdownn {
+    float: right;
+    overflow: hidden;
+    
+  }
+  
+  .dropdownn .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar_top a:hover, .dropdownn:hover .dropbtn {
+    background-color: rgb(235, 182, 200);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdownn:hover .dropdown-content {
+    display: block;
+  }
+  .containerd {
+    display: flex;
+    
+  }
+  .containerd .img {
+    margin: 6px;
+    margin-top: 60px;
+    margin-right: 100px;
+    
+  }
+  .containerd .img img{
+      height: 500px;
+      width: 400px;
+  }
+   .containerd .text_details{
+       margin-top: 60px;
+       text-align: right;
+       margin-right: 20px;
+        padding-right: 20px;
+       width: 700px;
+       
+   }
+   .containerd .text_details h2{
+       font-size: 20px;
+       font-family: Amiri-Regular;
+   }
+   .text_details .checked {
+    color: orange;
+  }
+  .text_details .fa-star{
+      font-size: 12px;
+  }
+  .discount .dis{
+      font-size: 30px;
+      color: red;
+      font-weight: 400;
+      font-family: Amiri-Regular;
+
+  }
+  .discount .nodis{
+      color: gray;
+    text-decoration:line-through;}
+    .text_details .size p,  p{
+        margin-top: 10px;
+        text-align: initial;
+        font-size: 20px;
+        font-family:  Amiri-Regular;
+    }
+    .text_details .container .coll {
+        border: 1px solid black;
+        padding: 10px;
+        width: 50px;
+        border-radius: 25px;
+        margin-left: 5px;
+        text-align: center;
+        font-weight: 400;
+        cursor: pointer;
+        
+    }
+    .text_details .container .coll:hover,.text_details .fas:hover{
+        background-color: white;
+        
+    }
+    .text_details .container .row{
+        flex: 3;
+        margin-right: 15px;
+    }
+    .text_details .btn{
+        width: 250px;
+        margin-top: 50px;
+        padding-top: 10px;
+        margin-left: 60px;
+        
+    }
+    .text_details  .fa-heart{
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    vertical-align: bottom;
+    padding-top: 15px;
+    font-size: 20px;
+
+    }
+    .accordion{
+        margin-top: 50px;
+        margin-right: 0px;
+        
+    }
+    .accordion .btn{
+        margin-top: 0px;
+        text-align: initial;
+        font-size: 20px;
+        font-family:  Amiri-Regular;
+        color: black;
+    }
+    
+    .counter {
+      width: 150px;
+      margin: right;
+      padding-right: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .counter input {
+      width: 50px;
+      border: 0;
+     border-color:#eff0f3 ;
+      line-height: 30px;
+      font-size: 20px;
+      text-align: center;
+      background: white;
+      color: rgb(0, 0, 0);
+      appearance: none;
+      outline: 0;
+  }
+  .counter span {
+      display: block;
+      font-size: 25px;
+      padding: 0 7px;
+      width: 30px;
+      text-align: center;
+      cursor: pointer;
+      color: #020303;
+      user-select: none;
+      background-color: #eff0f3;
+  }
